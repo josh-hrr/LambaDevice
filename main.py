@@ -3,7 +3,7 @@ print(testingLamba(5))
 
 #even or odd when using lambdas
 
-testingSecond = lambda number:'YES' if number % 2 == 0 else 'NO'
+testingSecond = lambda number: 'YES' if number % 2 == 0 else 'NO'
 
 print(testingSecond(5))
 
@@ -11,16 +11,11 @@ print(testingSecond(5))
 
 sum = lambda n1, n2: n1 + n2
 
-print(sum(5,5))
+print(sum(5, 5))
 
 #filter
 
-myList = [1,2,3,4,5]
-
-def testing(n):
-  if n % 2 == 0:
-    return n
-
-result = list(filter(lambda n:n%2==0, myList))
+myList = [1, 2, 3, 4, 5]
+result = list(filter(lambda n: n % 2 == 0, myList))
 
 print(result)
